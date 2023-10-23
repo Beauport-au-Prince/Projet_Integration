@@ -1,0 +1,281 @@
+/**
+* Template Name: Rapid
+* Updated: Sep 18 2023 with Bootstrap v5.3.2
+* Template URL: https://bootstrapmade.com/rapid-multipurpose-bootstrap-business-template/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  background: #000F21;
+  color: #444;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  color: #1bb1dc;
+  text-decoration: none;
+  transition: 0.5s;
+}
+p {
+  color: white;
+  font-family: "Manrope";
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #0a98c0;
+  outline: none;
+  text-decoration: none;
+}
+
+p {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+h1,
+h2,
+h4,
+h5,
+h6 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+h3 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0;
+  color: #F1ACEF;
+}
+
+#hero {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: #000F21 url("../img/john-wick-background.png") center top no-repeat;
+  background-size: cover;
+  padding-top: 110px;
+  opacity: 30;
+}
+body {
+  background-color: #000F21;
+}
+
+.container-fluid {
+  max-width: 1280px;
+}
+
+h1 {
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 55px;
+  margin: 5rem;
+  color: #F22DBB;
+}
+
+.card {
+  position: relative;
+  height: 200px;
+  border-radius: 25px;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+}
+.card:hover{
+  transform: scale(1.05);
+}
+.card:before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(-45deg, #3553b6 0%, #f22dbb 100% );
+  transform: translate3d(0px, 20px, 0) scale(0.95);
+  filter: blur(60px);
+  opacity: var(0.7);
+  transition: opacity 0.3s;
+  border-radius: inherit;
+}
+
+/* 
+* Prevents issues when the parent creates a 
+* stacking context. (For example, using the transform
+* property )
+*/
+.card::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+  border-radius: inherit;
+}
+      
+.card-text {
+  position: relative;
+  top: 50%;
+  font-family: Poppins;
+  font-weight: 700;
+  text-shadow: 2px 2px 5px #555;
+}
+.card-text:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 991px) {
+  #hero {
+    height: auto;
+    padding: 100px 0 60px 0;
+  }
+
+  #hero .container {
+    height: auto !important;
+  }
+
+  #hero .intro-img {
+    .intro-img {
+      max-width: 40%; 
+      margin:60px;
+    }
+    
+  }
+}
+
+@media (min-width: 992px) {
+  #hero .intro-info {
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: 991px) {
+  #hero .intro-info {
+    text-align: center;
+    padding-top: 40px;
+  }
+}
+
+#hero .intro-info h2 {
+  color: white;
+  margin-bottom: 40px;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+#hero .intro-info h2 span {
+  color: #1bb1dc;
+}
+
+@media (max-width: 991px) {
+  #hero .intro-info h2 {
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+}
+
+#hero .intro-info .btn-ecoutez,
+#hero .intro-info .btn-services {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: #F1ACEF;
+  color: #fff;
+}
+
+#hero .intro-info .btn-ecoutez:hover,
+#hero .intro-info .btn-services:hover {
+  background: #F1ACEF;
+}
+
+
+section {
+  overflow: hidden;
+}
+
+
+#team {
+  padding: 60px 0;
+}
+
+#team .member {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+#team .member .member-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: 0.2s;
+  padding: 15px 0;
+  background: rgba(29, 28, 41, 0.6);
+}
+
+#team .member .member-info-content {
+  transition: margin 0.2s;
+  height: 36px;
+  transition: height 0.4s;
+}
+
+#team .member:hover .member-info {
+  transition: 0.4s;
+}
+
+#team .member:hover .member-info-content {
+  height: 70px;
+}
+
+#team .member h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+  color: #fff;
+}
+
+#team .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+  color: #fff;
+}
+
+#team .member .social a {
+  transition: none;
+  color: #fff;
+}
+
+#team .member .social a:hover {
+  color: #1bb1dc;
+}
+
+#team .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
